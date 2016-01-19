@@ -1,0 +1,12 @@
+.DS_Store
+logs
+target
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+.idea/
+.tmp/
+dist/
+out
