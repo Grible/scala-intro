@@ -1,12 +1,12 @@
 import java.time.LocalDateTime
 
-case class Task(name: String, dueDate: LocalDateTime = LocalDateTime.now(), var isCompleted: Boolean = false)
+case class Task(name: String, dueDate: LocalDateTime = LocalDateTime.now, var isCompleted: Boolean = false)
 
-val task1: Task = Task("Eat pizza", dueDate = LocalDateTime.now() minusHours 1, isCompleted = true)
+val task1: Task = new Task("Eat pizza", dueDate = LocalDateTime.now minusHours 1, isCompleted = true)
 val task2 = Task("Give demo")
 
 val magicNumber = 42
-val task3 = Task(s"Nr $magicNumber", LocalDateTime.now().plusDays(1))
+val task3 = Task(s"Nr $magicNumber", LocalDateTime.now plusDays 1)
 
 val tasks: List[Task] = List(task1, task2, task3)
 
